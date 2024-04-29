@@ -43,4 +43,11 @@ tasks.named<Test>("test") {
 }
 
 tasks.register<CountSrcFiles>("countSrc") {
+    inputs.dir(layout.projectDirectory.dir("src"))
+        .withPropertyName("srcDir")
+        .withPathSensitivity(PathSensitivity.RELATIVE)
+
+    outputs.dir(layout.buildDirectory.dir("src-stats"))
+        .withPropertyName("outputDir")
+    outputs.cacheIf { true }
 }
