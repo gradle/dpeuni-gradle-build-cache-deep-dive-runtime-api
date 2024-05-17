@@ -13,10 +13,12 @@ training module. In this exercise you will go over the following:
 * Practice troubleshooting cache issues due to missing input and output declaration
 * Get familiar with using the build cache runtime API
 
+---
 ## Prerequisites
 
 * Finished going through the build cache runtime API section in [Gradle Build Cache Deep Dive](https://dpeuniversity.gradle.com/app/courses/54469478-55ba-416d-9cef-3b5aa33dd2a5)
 
+---
 ## Develocity Authentication
 
 If you haven't already done so, you can authenticate with the training Develocity service by running:
@@ -43,6 +45,7 @@ Once confirmed you will see the following message and you can close the browser 
 <img width="75%" height="75%" src="https://github.com/gradle/build-tool-training-exercises/assets/120980/1711c9db-814c-4df1-9d18-42fe5d1b82f8">
 </p>
 
+---
 ## Scenario
 
 In `app/build.gradle.kts` there is a task called `countSrc`, which counts the
@@ -56,6 +59,7 @@ The task makes use of the `CountSrcFiles` task type which is in `buildSrc/src/ma
 
 Both incremental build and build caching does not work with the `countSrc` task. You will debug why and use the build cache runtime API to address this.
 
+---
 ## Steps
 
 1. Open the Gradle project in this repository in an editor of your choice
@@ -121,6 +125,7 @@ Both incremental build and build caching does not work with the `countSrc` task.
 
 16. Now do a clean and run the task. There should be no outcome label and the value in the output file should be correct.
 
+---
 ## Solution Reference
 
 If you get stuck you can refer to the `solution` branch of this repository.
