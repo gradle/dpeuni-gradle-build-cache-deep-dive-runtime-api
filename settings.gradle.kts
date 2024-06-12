@@ -13,6 +13,10 @@ plugins {
 
 gradleEnterprise {
     server = "https://dpeuniversity-develocity.gradle.com"
+    buildScan {
+        tag("dpeuni-gradle-build-cache-deep-dive-runtime-api")
+        value("Course", "Gradle Build Cache Deep Dive")
+    }
 }
 
 rootProject.name = "dpeuni-gradle-build-cache-deep-dive-runtime-api"
