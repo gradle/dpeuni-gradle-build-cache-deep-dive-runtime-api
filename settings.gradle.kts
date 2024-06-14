@@ -13,6 +13,12 @@ plugins {
 
 gradleEnterprise {
     server = "https://dpeuniversity-develocity.gradle.com"
+    buildScan {
+        // Optional, Add tags and values that make it easier to find the Build Scan related to this lab.
+        // See https://docs.gradle.com/develocity/gradle-plugin/current/#extending_build_scans for more information about adding custom information to a Build Scan.
+        tag("dpeuni-gradle-build-cache-deep-dive-runtime-api")
+        value("Course", "Gradle Build Cache Deep Dive")
+    }
 }
 
 rootProject.name = "dpeuni-gradle-build-cache-deep-dive-runtime-api"
