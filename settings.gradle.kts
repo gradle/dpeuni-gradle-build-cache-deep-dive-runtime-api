@@ -17,6 +17,7 @@ gradleEnterprise {
         // Optional, Add tags and values that make it easier to find the Build Scan related to this lab.
         // See https://docs.gradle.com/develocity/gradle-plugin/current/#extending_build_scans for more information about adding custom information to a Build Scan.
         tag("dpeuni-gradle-build-cache-deep-dive-runtime-api")
+        tag("solution")
         value("Course", "Gradle Build Cache Deep Dive")
     }
 }
